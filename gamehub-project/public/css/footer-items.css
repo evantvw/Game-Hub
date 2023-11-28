@@ -1,0 +1,226 @@
+section .container{
+    display: flex;
+    justify-content:space-around;
+    padding: 32px 16px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.img {
+  margin: 0px;
+  width: 100%;
+}
+
+.team-column{
+    width: 20%;
+    padding: 8px 0;
+}
+
+.title h1{
+    padding-top: 30px;
+    width:100%;
+    text-align: center;
+    color: #EEE;
+    font-size: 40px;
+}
+
+.card{
+    transition: .2s ease-in-out;
+    position: relative;
+    height: 450px;
+    padding: 0px;
+    border-radius: 20px;
+    background-color: #EEEEEE23;
+    color: #EEE;
+}
+
+
+.card .img-container{
+    /* border-radius: 20px 20px 0 0;
+    width: 100%; */
+    position: relative;
+    /* padding-bottom: 0.5px;
+    margin: 0 0 5px 0; */
+}
+
+/* duotone */
+
+.img-container::after,
+.img-container::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.card .img-container img{
+    filter: grayscale(80%) sepia(40%) blur(.6px);
+    transition: filter .2s ease-in;
+
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    padding-top: 0;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card:hover > .img-container img{
+    filter: none;
+}
+
+.text-container, .sosmed-container{
+    margin-top: 25px;
+    top: 10px;
+}
+
+.text-container{
+    position: relative;
+}
+
+.text-container h4{
+    font-size: 16px;
+}
+
+.sosmed-container{
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sosmed-container a{
+    color: #EEE;
+    font-size: larger;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.sosmed-container a:hover{
+    color: #ADEFD1;
+    transform:translateY(-5px);
+}
+
+@media screen and (max-width: 1650px){
+    .card{
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .card{
+        height: 360px;
+        width: 260px;
+    }
+    .text-container, .sosmed-container{
+        top: 0px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .team-column{
+        width: 80%;
+    }
+
+    section .container{
+        justify-content: space-between;
+    }
+    .card{
+        height: 380px;
+        width: 300px;
+    }
+
+    .card:hover{
+        transform: scale(1.03);
+    }
+}
+
+@media screen and (max-width: 950px){
+    .team-column{
+        width: 30%;
+    }
+
+    section .container{
+        justify-content: space-around;
+    }
+    .card{
+        height: 350px;
+        width: 270px;
+    }
+}
+
+
+@media screen and (max-width: 870px){
+
+    section .container{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .team-column{
+        width : 100%;
+    }
+
+    .card{
+        height: 300px;
+        width: 100%;
+    }
+
+    .card:hover{
+        transform: scale(1.005);
+    }
+
+    .card .img-container{
+        width: 50%;
+        height: 100%;
+    }
+
+    .card .img-container img{
+        max-width: 100%;
+        min-height: 100%;
+        border-radius: 20px 0 0 20px;
+        object-fit: cover;
+    }
+
+    .text-container, .sosmed-container{
+        text-align: left;
+        left: 55%;
+        position: absolute;
+    }
+
+    .text-container{
+        width: 40%;
+        top: 0px;
+    }
+    .sosmed-container{
+        top: 200px;
+        left: 58%;
+        float: left;
+        /* display: inline-block; */
+    }
+    .sosmed-container a{
+        /* position: relative; */
+        margin-left:20%;
+    }
+
+    .page_title h1{
+        padding-top: 50px;
+        width:100%;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .text-container{
+        top: 0px;
+    }
+
+    .sosmed-container{
+        top: 200px;
+    }
+}

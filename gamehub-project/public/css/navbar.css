@@ -1,0 +1,173 @@
+.logo{
+    margin-right: 20%;
+    display: flex;
+    color: #eee;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+.logo span{
+    color: #ADEFD1;
+    font-weight: bolder;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    background-color: #00384d;
+    z-index: 10;
+    padding: 10px 0;
+    font-weight: bolder;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #eee;
+}
+
+
+nav ul li a:hover{
+    color: #ADEFD1;
+}
+
+nav ul li.signin_button a{
+    padding: 5px 10px;
+    background-color: #009392;
+    color: #eee;
+    border-radius: 15px;
+}
+
+nav ul li.signin_button a:hover{
+    background-color: #eee;
+    color: #009392;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    z-index: 15;
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -2px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all .2s;
+}
+
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -2.2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, -0.1px);
+}
+
+
+
+
+@media screen and (max-width: 880px){
+    nav ul{
+        width : 50%;
+    }
+
+    .logo{
+        margin-left: 5%;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    nav ul{
+        width : 50%;
+    }
+
+    .logo{
+        margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 710px){
+    nav ul{
+        width : 60%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    nav ul{
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        width: 100%;
+        height: 95vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #006666;
+        transition: all .7s;
+        z-index: 100;
+    }
+
+    nav ul.slide{
+        right: 0;
+    }
+
+    nav ul li.signin_button a{
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+    nav ul li a:hover{
+        color: #bff2db;
+    }
+
+    .menu-toggle{
+        display: flex;
+        margin-left: 50%;
+    }
+
+}

@@ -1,0 +1,177 @@
+.footer .container-footer{
+	width: 90%;
+	margin:auto;
+}
+.row{
+	display: flex;
+}
+
+.footer-col ul{
+	list-style: none;
+}
+
+.footer{
+	/* position: absolute; */
+	bottom: 0;
+    right: 0;
+    left: 0;
+	background-color: #00384d;
+    padding: 70px 0;
+	width: 100%;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+ }
+
+ #tengah1{
+     margin-left: 30px;
+ }
+
+ #tengah2, #kanan{
+     margin-left: 20px;
+ }
+
+ #kiri a{
+     /* text-decoration: none; */
+     color: #ADEFD1;
+ }
+
+ #kiri a:active{
+     color: #2d505ce0;
+ }
+
+ .footer-col h4{
+     font-size: 18px;
+     color: #eee;
+     text-transform: capitalize;
+     margin-bottom: 35px;
+     font-weight: 600;
+     position: relative;
+ }
+ .footer-col h4::before{
+     content: '';
+     position: absolute;
+     left:0;
+     bottom: -10px;
+     background-color: #ADEFD1;
+     height: 2px;
+     box-sizing: border-box;
+     width: 50px;
+ }
+
+ .footer-col ul li:not(:last-child){
+     margin-bottom: 10px;
+ }
+
+ .footer-col p{
+     color: #eee;
+     text-align: justify;
+ }
+
+ .footer-col ul li a{
+     font-size: 16px;
+     text-transform: capitalize;
+     text-decoration: none;
+     font-weight: 300;
+     color: #eee;
+     display: block;
+     transition: all 0.3s ease;
+ }
+ .footer-col ul li a:hover{
+     color: #ADEFD1;
+     padding-left: 8px;
+ }
+ .footer-col .social-links a{
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     background-color: rgba(255,255,255,0.2);
+     margin:0 10px 10px 0;
+     text-align: center;
+     line-height: 40px;
+     border-radius: 50%;
+     color: #ffffff;
+     transition: all 0.5s ease;
+ }
+ .footer-col .social-links a:hover{
+     color: #24262b;
+     background-color: #ffffff;
+ }
+
+ #kanan form .text{
+     margin-top: 10px;
+ }
+
+ #kanan label{
+     color: #EEE;
+ }
+
+ #kanan form input, #kanan form textarea{
+     margin-top: 5px;
+     width: 100%;
+     font-size:15px ;
+     background:#2d505ce0 ;
+     border: 1px solid #2d505ce0;
+     border-radius: 10px;
+ }
+
+ input.input-footer, textarea.input-footer{
+     color: #eee;
+     outline: none;
+     height: 40px;
+ }
+
+ .btn button{
+     margin-top: 10px;
+     height: 40px;
+     width: 100%;
+     border: none;
+     outline: none;
+     background: #ADEFD1;
+     border-radius: 10px;
+     color: #00384d;
+     font-weight: 600;
+     font-size: 15px;
+ }
+
+ /*responsive*/
+ @media(max-width: 767px){
+     .footer-col{
+         width: 50%;
+         margin-bottom: 30px;
+     }
+ }
+
+ @media(max-width: 716px){
+     .footer{
+         position: static;
+     }
+     .row{
+         flex-direction: column;
+     }
+
+     .footer-col{
+         width: 100%;
+     }
+
+     #tengah1, #tengah2, #kanan{
+         margin-left: 0px;
+     }
+ }
+
+ @media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+        padding:0;
+    }
+ }
+
+#message, #email{
+    padding: 3px;
+}
+
+#message{
+    resize: none;
+}

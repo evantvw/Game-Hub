@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg, #00203F, #003f3f);
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+}

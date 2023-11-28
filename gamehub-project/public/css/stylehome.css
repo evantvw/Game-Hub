@@ -1,0 +1,262 @@
+*, html{
+    scroll-behavior: smooth !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    /* background:linear-gradient(120deg, #00203F,  #003f3f ); */
+    background: linear-gradient(120deg, #00203F77, rgba(255,0,0,0)),
+    linear-gradient(-120deg, #00203F77,  #003f3ff3 100% ),
+    linear-gradient(180deg, #003f3f0f, #00203Fff 36%),
+    url("../img/Home_background.jpg") no-repeat;
+    background-size: 150%;
+    background-position: top;
+    height: 295vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section1{
+    position: absolute;
+    left: 50%;
+    top: 35vh;
+}
+
+section .textcontainer{
+    text-align: center;
+    color: #eee;
+    /* border: 1px red solid; */
+    transform: translateX(-50%);
+}
+
+section .textcontainer h1{
+    font-size: 60px;
+    padding-bottom: 45px;
+}
+
+section .textcontainer h3{
+    font-size: 25px;
+}
+
+.searchbar{
+    /* display: block;
+    margin: auto; */
+    position: absolute;
+    left: -35%;
+    border-radius: 30px;
+    background: #eee;
+    width: 70%;
+    /* border: 1px red solid; */
+}
+
+.searchbar input{
+    width: 60%;
+    outline: none;
+    border: 0;
+    background: none;
+    padding: 20px 20px;
+}
+
+.searchbar button{
+    position: absolute;
+    background: #006A69;
+    border: none;
+    top: 15%;
+    right: 2%;
+    color: #eee;
+    border-radius: 20px;
+    padding: 12px 10px;
+    width: 20%;
+    cursor: pointer;
+    transition: all .2S ease;
+}
+
+.searchbar button:hover{
+    background: #015756;
+}
+
+
+@media screen and (max-width: 1445px){
+    button{
+        top: 82%;
+    }
+}
+
+@media screen and (max-width: 1105px){
+    button{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    button{
+        top: 84%;
+    }
+}
+
+/* section  2 */
+.section2{
+    position:absolute;
+    top: 110vh;
+    left: 0;
+    /* border: 1px red solid; */
+    width: 100%;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    color: #eee;
+    /* border: 1px purple solid; */
+}
+
+.btn-sec-1, .btn-sec-2{
+    text-align: right;
+    margin-right: 25px;
+}
+
+.pre-btn, .nxt-btn{
+    background: none;
+    border: none;
+    color: #eee;
+    font-size: 25px;
+    margin: 5px 5px;
+    cursor: pointer;
+    /* border: 1px red solid; */
+}
+
+.game-container{
+    /* border: 1px red solid; */
+    /* justify-content: space-around; */
+    display: flex;
+    padding: 15px 0;
+    overflow-x: auto;
+}
+
+.game-container::-webkit-scrollbar{
+    display: none;
+}
+
+.game-img img{
+    object-fit: cover;
+    height: 180px;
+    width: 170px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.game-card{
+    transition: all .5s ease;
+}
+
+.game-card:hover{
+    transform: scale(1.1);
+}
+
+
+.game-img{
+    overflow-x: hidden;
+}
+
+.game-card{
+    margin: 0 20px;
+}
+
+.game-title{
+    font-weight: bolder;
+    max-width: 100px;
+}
+
+.game-dev{
+    font-size: 12px;
+}
+
+/* section3 */
+
+.section3{
+    position:absolute;
+    top: 175vh;
+    left: 0;
+    /* border: 1px red solid; */
+    width: 100%;
+}
+
+@media(max-width: 1600px){
+    body{
+        background-size:200%;
+        background-position: top;
+    }
+
+    .searchbar{
+        left: -40%;
+        width: 80%;
+    }
+}
+@media(max-width: 1080px){
+
+    body{
+        background-size:200%;
+    }
+    .section1{
+        top: 30vh;
+    }
+
+    .searchbar{
+        left: -65%;
+        width: 130%;
+    }
+
+}
+@media(max-width: 800px){
+
+    .section1{
+        top: 25vh;
+    }
+
+    .section3{
+        top: 150vh;
+    }
+
+    body{
+        background-size:380%;
+    }
+
+    section .textcontainer h3{
+        font-size: 17.5px;
+    }
+
+    .searchbar{
+        left: -80%;
+        width: 160%;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    body{
+        height: 325vh;
+    }
+
+    section .textcontainer h1{
+        font-size: 45px;
+        padding-bottom: 25px;
+    }
+
+    section .textcontainer h3{
+        font-size: 25px;
+    }
+
+    .button-text{
+        display: none;
+    }
+
+}

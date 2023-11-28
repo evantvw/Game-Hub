@@ -1,0 +1,185 @@
+/*
+DIPAKE DI HALAMAN:  - ERROR[404]
+                    - ERROR[419]
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background:linear-gradient(120deg, #00203F,  #003f3f );
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    margin-top: 5%;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container i{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+.container .text{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+.container .text h3{
+    margin-top: 5px;
+    font-size: 60px;
+}
+.container .text h4{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.container .text h4 a{
+    text-decoration: none;
+    color:#ADEFD1
+}
+
+.error-button{
+    background: #006A69;
+    border: none;
+    top: 80%;
+    right: 16%;
+    color: #eee;
+    border-radius: 20px;
+    padding: 12px 10px;
+    margin-top: 10px;
+    width: 15%;
+    transition: .3s ease-in;
+}
+
+.error-button:hover{
+    transform: scale(1.05);
+    background: #007775;
+}
+
+/* search not found */
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title{
+    color: #eee;
+}
+
+#oopss{
+    font-size: 60px;
+}
+
+.searchbar{
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    background: #eee;
+    width: 70%;
+}
+
+.searchbar input{
+    width: 60%;
+    outline: none;
+    border: 0;
+    background: none;
+    padding: 20px 20px;
+}
+
+button{
+    /* position: absolute; */
+    background: #006A69;
+    border: none;
+    top: 79%;
+    right: 16%;
+    color: #eee;
+    border-radius: 20px;
+    padding: 12px 10px;
+    width: 15%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1445px){
+    button{
+        top: 82%;
+    }
+}
+
+@media screen and (max-width: 1105px){
+    button{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    button{
+        top: 84%;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .searchbar{
+        width: 75%;
+    }
+
+    button{
+        right: 15%;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 743px){
+    button{
+        top: 86%;
+    }
+}
+
+@media screen and (max-width: 705px){
+    .searchbar{
+        width: 100%;
+    }
+
+    button{
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 665px){
+    button{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 585px){
+    .searchbar{
+        width: 120%;
+    }
+    button{
+        right: -15%;
+        top: 88%;
+    }
+}
+
+@media screen and (max-width: 552px){
+    button{
+        width: 35%;
+    }
+}

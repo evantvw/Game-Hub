@@ -1,0 +1,76 @@
+.tos-and-pp{
+    overflow-y: scroll;
+    height: 80%;
+    width: 65%;
+    background-color: #EEE;
+    border-radius: 20px;
+    padding: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.tos-and-pp::-webkit-scrollbar{
+    display: none;
+}
+
+.title{
+    color: #EEE;
+    position: relative;
+    top: 30px;
+}
+
+.back{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 8%;
+}
+
+.back a i{
+    font-size: 50px;
+}
+
+.back a{
+    color: #bff2db;
+    text-decoration: none;
+}
+
+.back a:hover{
+    color:#EEE;
+}
+
+@media screen and (max-width: 780px){
+    .title{
+        top: 1%;
+    }
+
+    .back{
+        margin-top: 1%;
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    body{
+        height: 108vh;
+    }
+    .tos-and-pp{
+        margin-top: 15%;
+    }
+
+    .title{
+        top: 4%;
+    }
+
+    .back{
+        margin-top: 6%;
+        margin-left: 7%;
+    }
+
+    .back a i{
+        font-size: 38px;
+    }
+}
